@@ -1,0 +1,22 @@
+{
+  "name": "pothos-federation-example",
+  "private": true,
+  "packageManager": "yarn@4.5.0",
+  "workspaces": [
+    "config/*",
+    "graph/*"
+  ],
+  "scripts": {
+    "_run-many": "nx run-many --verbose --output-style=stream",
+    "graph:serve": "nx run-many -p='@local-monorepo-graph/*' -t=dev:serve --output-style=stream"
+  },
+  "dependencies": {
+    "@yarnpkg/types": "^4.0.0",
+    "graphql": "^16.10.0",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "nx": "19.8.12"
+  }
+}

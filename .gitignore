@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+node_modules
+*.env*
+!.envrc
+*.backup
+*.plan
+
+# Editors
+.idea/*
+.vscode/*
+*.iml
+
+# App
+dist
+.eslintcache
+
+# Debug
+yarn-debug.log*
+yarn-error.log*
+
+# testing
+coverage
+
+# Misc
+.DS_Store
+app_name
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# NX
+.nx/
+.nxignore
+.nx-cache/
+.nx/cache
+.nx/workspace-data

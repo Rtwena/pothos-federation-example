@@ -1,0 +1,4 @@
+{
+  "extends": "@local-monorepo/typescript/backend-service.json",
+  "include": ["src/**/*", "tests/**/*"],
+}

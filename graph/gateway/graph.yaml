@@ -1,0 +1,14 @@
+version: 1
+subgraphs:
+  - name: cart
+    routing_url: http:/localhost:4001
+  - name: order
+    routing_url: http:/localhost:4002
+  - name: product
+    routing_url: http:/localhost:4003
+  - name: shipping
+    routing_url: http:/localhost:4004
+  - name: stock
+    routing_url: http:/localhost:4005
+  - name: user
+    routing_url: http:/localhost:4006

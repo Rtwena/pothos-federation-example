@@ -1,0 +1,39 @@
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key", "@shareable", "@extends", "@external", "@requires"])
+
+"""Cart"""
+type Cart
+  @key(fields: "id")
+  @extends
+{
+  lineItems: [LineItem!]! @external
+  id: ID!
+  lineItemsStock: [LineItemStock!]! @requires(fields: "lineItems { variant { sku } }")
+}
+
+"""Line item"""
+type LineItem
+  @key(fields: "id")
+  @extends
+{
+  id: ID! @external
+  variant: Variant! @external
+}
+
+"""Stock of a line item"""
+type LineItemStock
+  @key(fields: "sku")
+  @extends
+{
+  stock: Int!
+  sku: ID!
+}
+
+"""Variant"""
+type Variant
+  @key(fields: "sku")
+  @extends
+{
+  sku: ID! @external
+  stock: Int!
+}

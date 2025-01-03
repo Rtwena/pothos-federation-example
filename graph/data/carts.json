@@ -1,0 +1,41 @@
+[
+    {
+        "id": "c1",
+        "userId": "u1",
+        "lineItems": [
+            {
+                "id": "l1",
+                "productId": "p1",
+                "sku": "p1sku1",
+                "quantity": 2,
+                "variant": {
+                    "sku": "p1sku1",
+                    "size": "p1size1",
+                    "price": 10
+                }
+            },
+            {
+                "id": "l2",
+                "productId": "p2",
+                "sku": "p2sku2",
+                "quantity": 3,
+                "variant": {
+                    "sku": "p2sku2",
+                    "size": "p2size2",
+                    "price": 15
+                }
+            },
+            {
+                "id": "l3",
+                "productId": "p3",
+                "sku": "p3sku1",
+                "quantity": 4,
+                "variant": {
+                    "sku": "p3sku1",
+                    "size": "p3size1",
+                    "price": 20
+                }
+            }
+        ]
+    }
+]

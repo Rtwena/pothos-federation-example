@@ -1,0 +1,8 @@
+[
+    { "sku": "p1sku1", "stock": 5 },
+    { "sku": "p1sku2", "stock": 1 },
+    { "sku": "p2sku1", "stock": 10 },
+    { "sku": "p2sku2", "stock": 8 },
+    { "sku": "p3sku1", "stock": 20 },
+    { "sku": "p3sku2", "stock": 13 }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "@local-monorepo-graph/gateway",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "type": "module",
+  "types": "src/index.ts",
+  "scripts": {
+    "check": "yarn g:tsc --noEmit",
+    "build": "yarn g:tsc -p tsconfig.build.json",
+    "lint": "yarn g:eslint '**/*.{ts,js}' --no-error-on-unmatched-pattern",
+    "lint:fix": "yarn g:eslint '**/*.{ts,js}' --fix --no-error-on-unmatched-pattern",
+    "clean": "yarn g:rimraf dist yarn-error.log",
+    "watch": "yarn g:tsc -w",
+    "test": "yarn g:jest --passWithNoTests",
+    "test:watch": "yarn g:jest --watchAll",
+    "dev:serve": "npx tsx watch --include \"../**/*.ts\" --clear-screen=false ./scripts/local-server"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^2.9.3",
+    "@apollo/server": "^4.11.2",
+    "@as-integrations/aws-lambda": "^3.1.0",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "@apollo/query-planner": "^2.9.3",
+    "@types/aws-lambda": "^8.10.145",
+    "@types/express": "^4"
+  },
+  "nx": {
+    "tags": [
+      "type:lib"
+    ],
+    "projectType": "library"
+  }
+}

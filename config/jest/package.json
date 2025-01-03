@@ -1,0 +1,18 @@
+{
+  "name": "@local-monorepo/jest",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "nx": {
+    "tags": [
+      "type:config"
+    ],
+    "projectType": "library"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
+  }
+}

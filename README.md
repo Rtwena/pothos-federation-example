@@ -1,0 +1,1 @@
+run using `yarn graph:serve` and visit http://localhost:4000/ to access the federated graph
