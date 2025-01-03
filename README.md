@@ -1,1 +1,3 @@
 run using `yarn graph:serve` and visit http://localhost:4000/ to access the federated graph
+
+example query: http://localhost:4000/?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAMICGeKAFACRQUoCSY6RAyingJZIDmAhAEoiwADpIiRepSrSmLInQbNhYiZKIAbHgkYoEcAM4doAaxHiNGwyjOWrRQ6Zj3JAX1dEuYT9qS79Iwt1K29PSQAHPAgwGCh5cMdnRJwyVC4UAk8PEKIAYik0kgALBChTCBgUexy3EAAaEAA3Ci4yACNNBEMMEDVJURA5ZkHWQagARkHxOrcgA 
